@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIENNE — Премиум Салон Красоты & Бутик</title>
+  <meta name="description" content="Эксклюзивный уход за телом и лицом в салоне красоты MIENNE. Натуральные компоненты, премиальный сервис и передовые SPA-ритуалы.">
+  
+  <!-- Google Fonts: Cormorant Garamond (Serif) & Montserrat (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-slide active">БЕСПЛАТНАЯ ДОСТАВКА И ВОЗВРАТ НА ВСЕ ЗАКАЗЫ</div>
+    <div class="announcement-slide">ПРИГЛАШАЕМ В МИР ГАРМОНИИ И ЧУВСТВЕННОСТИ MIENNE</div>
+    <div class="announcement-slide">СКИДКА 10% НА ПЕРВЫЙ ВИЗИТ ПРИ ЗАПИСИ ОНЛАЙН</div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="#" class="logo">MIENNE</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#services" class="nav-link">УСЛУГИ</a>
+        <a href="#editorial" class="nav-link">ФИЛОСОФИЯ</a>
+        <a href="#shop" class="nav-link">БУТИК</a>
+        <button class="nav-btn-link" id="open-booking-nav">ЗАПИСЬ</button>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="cart-toggle" id="cart-toggle">
+          КОРЗИНА [<span id="cart-count">0</span>]
+        </button>
+        <button class="menu-burger" id="menu-burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background-wrapper">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/assets/hero_mobile.png">
+        <img src="/assets/hero_desktop.png" alt="MIENNE Products" class="hero-bg-img">
+      </picture>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title animate-fade-up">AWAKEN THE EVERYDAY</h1>
+      <p class="hero-subtitle animate-fade-up">Intimate by nature. Intuitive by design.</p>
+      <div class="hero-actions animate-fade-up">
+        <button class="btn btn-primary" id="hero-booking-btn">ЗАПИСАТЬСЯ НА ВИЗИТ</button>
+        <a href="#shop" class="btn btn-secondary">В БУТИК</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / Philosophy Section -->
+  <section class="philosophy-section" id="editorial">
+    <div class="container">
+      <div class="philosophy-layout">
+        <div class="philosophy-text-block">
+          <p class="philosophy-accent">ФИЛОСОФИЯ БРЕНДА</p>
+          <h2 class="philosophy-title">Создано на стыке науки и чувств</h2>
+          <p class="philosophy-description">
+            Созданная на стыке активных компонентов и природной чувственности, косметика и ритуалы Mienne обладают силой менять ваше восприятие повседневности. Если ежедневный уход может вдохновлять, то на что еще вы способны?
+          </p>
+        </div>
+        <div class="philosophy-image-block">
+          <div class="image-wrapper parallax">
+            <img src="/assets/service_skin.png" alt="Уход за лицом MIENNE" class="parallax-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">РЕДКИЕ РИТУАЛЫ</span>
+        <h2 class="section-title">Услуги салона</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-service-name="Эстетический уход за лицом">
+          <div class="service-image-wrapper">
+            <img src="/assets/service_skin.png" alt="Уход за лицом" class="service-img">
+            <div class="service-price">4 500 RUB</div>
+          </div>
+          <div class="service-info">
+            <h3 class="service-title">Эстетический уход за лицом</h3>
+            <p class="service-desc">Глубокое очищение, массаж лица, увлажнение с использованием сывороток MIENNE.</p>
+            <button class="btn btn-outline book-service-btn">ЗАПИСАТЬСЯ</button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card" data-service-name="SPA-массаж и релаксация">
+          <div class="service-image-wrapper">
+            <img src="/assets/service_massage.png" alt="SPA-массаж" class="service-img">
+            <div class="service-price">5 500 RUB</div>
+          </div>
+          <div class="service-info">
+            <h3 class="service-title">SPA-массаж и релаксация</h3>
+            <p class="service-desc">Ароматерапевтический массаж всего тела с использованием теплых эфирных масел.</p>
+            <button class="btn btn-outline book-service-btn">ЗАПИСАТЬСЯ</button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card" data-service-name="Комплексный SPA-ритуал">
+          <div class="service-image-wrapper">
+            <img src="/assets/service_massage.png" alt="Комплексный ритуал" class="service-img">
+            <div class="service-price">8 500 RUB</div>
+          </div>
+          <div class="service-info">
+            <h3 class="service-title">Комплексный SPA-ритуал</h3>
+            <p class="service-desc">Пилинг тела, массаж и персонально подобранная маска для сияния лица.</p>
+            <button class="btn btn-outline book-service-btn">ЗАПИСАТЬСЯ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Text Separator -->
+  <section class="text-separator-section">
+    <div class="container">
+      <div class="separator-content">
+        <p class="separator-text">
+          Formulated with actives + aphrodisiacs, Mienne has the power to stimulate your worldview. If daily skincare can turn you on, what else can?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boutique / Shop Section -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="section-header-row">
+        <div class="section-header">
+          <span class="section-tagline">СЕЛЕКТИВНЫЙ БУТИК</span>
+          <h2 class="section-title">Домашний уход</h2>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-nav-btn" id="prev-btn" aria-label="Назад">&larr;</button>
+          <button class="carousel-nav-btn" id="next-btn" aria-label="Вперед">&rarr;</button>
+        </div>
+      </div>
+
+      <div class="product-category-filters">
+        <button class="filter-btn active" data-filter="all">ВСЁ</button>
+        <button class="filter-btn" data-filter="wash">ОЧИЩЕНИЕ</button>
+        <button class="filter-btn" data-filter="set">НАБОРЫ</button>
+        <button class="filter-btn" data-filter="creme">УВЛАЖНЕНИЕ</button>
+      </div>
+
+      <div class="product-carousel-wrapper">
+        <div class="product-carousel" id="product-carousel">
+          
+          <!-- Product 1 -->
+          <div class="product-card" data-category="wash" data-id="p1">
+            <div class="product-image-wrapper">
+              <img src="/assets/product_body_wash.png" alt="Восстанавливающий гель" class="product-img">
+              <button class="quick-add-btn">В КОРЗИНУ</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Восстанавливающий гель для тела</h3>
+              <p class="product-desc">Деликатное очищение с нотами сандала и иланг-иланга.</p>
+              <div class="product-price">2 900 RUB</div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" data-category="set" data-id="p2">
+            <div class="product-image-wrapper">
+              <img src="/assets/product_body_set.png" alt="Парфюмированный набор" class="product-img">
+              <button class="quick-add-btn">В КОРЗИНУ</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Парфюмированный набор ухода</h3>
+              <p class="product-desc">Дуэт из геля для душа и питательного молочка для тела.</p>
+              <div class="product-price">6 500 RUB</div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" data-category="creme" data-id="p3">
+            <div class="product-image-wrapper">
+              <img src="/assets/product_body_wash.png" alt="Увлажняющий крем" class="product-img" style="filter: brightness(0.95);">
+              <button class="quick-add-btn">В КОРЗИНУ</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Увлажняющий крем для тела</h3>
+              <p class="product-desc">Глубокое питание кожи с экстрактами макадамии и женьшеня.</p>
+              <div class="product-price">3 400 RUB</div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card" data-category="set" data-id="p4">
+            <div class="product-image-wrapper">
+              <img src="/assets/product_body_set.png" alt="Массажное масло" class="product-img" style="filter: hue-rotate(15deg) brightness(0.9);">
+              <button class="quick-add-btn">В КОРЗИНУ</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Массажное масло с афродизиаками</h3>
+              <p class="product-desc">Масло премиум-класса для глубокого расслабления и чувственности.</p>
+              <div class="product-price">4 200 RUB</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Присоединяйтесь к MIENNE</h2>
+        <p class="newsletter-desc">Подпишитесь, чтобы получать закрытые приглашения на закрытые вечера и первыми узнавать о новых релизах.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Ваш электронный адрес" required class="newsletter-input" aria-label="Email">
+          <button type="submit" class="newsletter-btn">ПОДПИСАТЬСЯ</button>
+        </form>
+        <div class="newsletter-status" id="newsletter-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">MIENNE</span>
+          <p class="footer-motto">Красота как искусство, уход как ритуал.</p>
+        </div>
+        <div class="footer-links">
+          <h4>МЕНЮ</h4>
+          <a href="#services">Услуги</a>
+          <a href="#editorial">Философия</a>
+          <a href="#shop">Бутик</a>
+        </div>
+        <div class="footer-contacts">
+          <h4>КОНТАКТЫ</h4>
+          <p>Москва, ул. Большая Никитская, 12</p>
+          <p>Телефон: +7 (495) 000-00-00</p>
+          <p>Email: welcome@mienne.ru</p>
+        </div>
+        <div class="footer-socials">
+          <h4>СОЦСЕТИ</h4>
+          <a href="#" target="_blank" rel="noopener">Telegram</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MIENNE. Все права защищены. Разработка премиум решений.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Drawer (Slide-out) -->
+  <div class="drawer-overlay" id="booking-overlay">
+    <div class="drawer" id="booking-drawer">
+      <div class="drawer-header">
+        <h2 class="drawer-title">ОНЛАЙН-ЗАПИСЬ</h2>
+        <button class="drawer-close" id="booking-close" aria-label="Закрыть">&times;</button>
+      </div>
+      
+      <div class="drawer-body">
+        <form class="booking-form" id="booking-form">
+          <div class="form-group">
+            <label for="booking-name">Имя</label>
+            <input type="text" id="booking-name" required placeholder="Введите ваше имя">
+          </div>
+          
+          <div class="form-group">
+            <label for="booking-phone">Телефон</label>
+            <input type="tel" id="booking-phone" required placeholder="+7 (999) 000-00-00">
+          </div>
+          
+          <div class="form-group">
+            <label for="booking-service">Выберите процедуру</label>
+            <select id="booking-service" required>
+              <option value="" disabled selected>Выберите из списка</option>
+              <option value="Эстетический уход за лицом">Эстетический уход за лицом (4 500 RUB)</option>
+              <option value="SPA-массаж и релаксация">SPA-массаж и релаксация (5 500 RUB)</option>
+              <option value="Комплексный SPA-ритуал">Комплексный SPA-ритуал (8 500 RUB)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="booking-date">Дата визита</label>
+            <input type="date" id="booking-date" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Предпочтительное время</label>
+            <div class="time-grid" id="time-grid">
+              <button type="button" class="time-slot-btn" data-time="10:00">10:00</button>
+              <button type="button" class="time-slot-btn" data-time="12:00">12:00</button>
+              <button type="button" class="time-slot-btn" data-time="14:00">14:00</button>
+              <button type="button" class="time-slot-btn" data-time="16:00">16:00</button>
+              <button type="button" class="time-slot-btn" data-time="18:00">18:00</button>
+              <button type="button" class="time-slot-btn" data-time="20:00">20:00</button>
+            </div>
+            <input type="hidden" id="booking-time" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="booking-notes">Пожелания или комментарии (необязательно)</label>
+            <textarea id="booking-notes" rows="3" placeholder="Особые пожелания к процедуре"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block" id="booking-submit-btn">ЗАПИСАТЬСЯ</button>
+        </form>
+        
+        <div class="booking-status" id="booking-status"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer (Slide-out) -->
+  <div class="drawer-overlay" id="cart-overlay">
+    <div class="drawer" id="cart-drawer">
+      <div class="drawer-header">
+        <h2 class="drawer-title">КОРЗИНА</h2>
+        <button class="drawer-close" id="cart-close" aria-label="Закрыть">&times;</button>
+      </div>
+      
+      <div class="drawer-body flex-column">
+        <div class="cart-items" id="cart-items-container">
+          <!-- Динамическое наполнение -->
+          <div class="cart-empty-msg">Ваша корзина пуста</div>
+        </div>
+        
+        <div class="cart-footer" id="cart-footer">
+          <div class="cart-total-row">
+            <span>ИТОГО:</span>
+            <span id="cart-total-price">0 RUB</span>
+          </div>
+          <button class="btn btn-primary btn-block" id="cart-checkout-btn">ОФОРМИТЬ ЗАКАЗ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detail-overlay">
+    <div class="modal" id="detail-modal">
+      <button class="modal-close" id="detail-close" aria-label="Закрыть">&times;</button>
+      <div class="modal-content" id="detail-modal-content">
+        <!-- Динамическое наполнение -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Modules -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
